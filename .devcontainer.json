@@ -1,0 +1,10 @@
+{
+  "name": "Debian 10 & PowerShell",
+  "dockerFile": "Dockerfile",
+  // Set *default* container specific settings.json values on container create.
+  "settings": {
+    "terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh"
+  },
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": ["ms-vscode.powershell"]
+}
