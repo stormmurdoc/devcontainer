@@ -81,6 +81,34 @@ or
 devpod up https://github.com/stormmurdoc/devcontainer --ide none
 ```
 
+Currently the following IDEs are supported:
+
+* clion
+* fleet
+* goland
+* intellij
+* jupyternotebook
+* none
+* openvscode
+* phpstorm
+* pycharm
+* rider
+* rubymine
+* vscode
+* webstorm
+
+The following command start your vscode and connect remotely to your
+development container.
+
+```shell
+devpod up https://github.com/stormmurdoc/devcontainer --ide vscode
+```
+
+The IDE option `openvscode` starts a VSCODE instance in your local
+browser.
+
+![openvscode](.media/openvscode.png)
+
 Connect to your devcontainer with the following command:
 
 ```shell
