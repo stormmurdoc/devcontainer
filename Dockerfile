@@ -41,3 +41,4 @@ RUN curl -fsSL https://starship.rs/install.sh | sh -s -- --yes \
     && echo $SNIPPET >> "/home/$USERNAME/.zshrc" \
     && echo 'eval "$(starship init zsh)"' >> "/home/$USERNAME/.zshrc" \
     && echo 'export TERM=ansi' >> "/home/$USERNAME/.zshrc" \
+    && echo 'alias ll='ls -l' >> "/home/$USERNAME/.zshrc"
