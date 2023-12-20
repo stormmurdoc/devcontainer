@@ -1,0 +1,22 @@
+{
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "extensions": [
+    "alefragnani.bookmarks",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "christian-kohler.path-intellisense",
+    "mohsen1.prettify-json",
+    "gruntfuggly.todo-tree",
+    "redhat.vscode-yaml"
+  ],
+  "mounts": [
+    "source=projectname-zshhistory,target=/commandhistory,type=volume"
+  ],
+  "name": "base",
+  "remoteUser": "murdoc",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  }
+}

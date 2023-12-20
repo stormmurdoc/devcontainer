@@ -1,0 +1,48 @@
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      # Identify invalid files
+      # git checks
+      - id: check-json
+      - id: trailing-whitespace
+        exclude: public|\*/_index\.md
+      - id: end-of-file-fixer
+      - id: check-yaml
+        exclude: \.drone\.yml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+      - id: detect-private-key
+      - id: check-case-conflict
+      - id: pretty-format-json
+        args:
+          - --autofix
+      - id: detect-private-key
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.38.0
+    hooks:
+      - id: markdownlint
+        exclude: binary|\.bin$|public|themes
+
+  - repo: https://github.com/jameswoolfenden/pre-commit-shell
+    rev: v1.0.6
+    hooks:
+      - id: shell-lint
+        exclude: template|\.template$
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.4
+    hooks:
+      - id: forbid-tabs
+        exclude_types: [python, javascript, dtd, markdown, makefile, xml]
+        exclude: binary|\.bin$|public
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.1
+    hooks:
+      - id: gitleaks
