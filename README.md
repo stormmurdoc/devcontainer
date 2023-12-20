@@ -19,6 +19,7 @@ For further information on devpod visit
     * [Linux AMD](#linux-amd)
     * [Linux ARM](#linux-arm)
 * [Usage](#usage)
+* [Mirror](#mirror)
 
 <!-- vim-markdown-toc -->
 
@@ -114,3 +115,7 @@ Connect to your devcontainer with the following command:
 ```shell
 ssh devcontainer.devpod
 ```
+
+## Mirror
+
+This repo is only a mirror from a private gitea instance.
