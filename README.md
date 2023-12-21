@@ -19,7 +19,7 @@ For further information on devpod visit
     * [Linux AMD](#linux-amd)
     * [Linux ARM](#linux-arm)
 * [Usage](#usage)
-* [Provider Inactivity TImeout](#provider-inactivity-timeout)
+* [Provider Inactivity Timeout](#provider-inactivity-timeout)
 * [Provider Options](#provider-options)
 * [Mirror](#mirror)
 
@@ -118,7 +118,7 @@ Connect to your devcontainer with the following command:
 ssh devcontainer.devpod
 ```
 
-## Provider Inactivity TImeout
+## Provider Inactivity Timeout
 
 Automatically shutdown unused workspaces to save costs with the following
 provider option. The following command sets the timeout to 10min for
