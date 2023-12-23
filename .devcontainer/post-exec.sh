@@ -2,10 +2,17 @@
 #
 # Post Execution Script
 #
+set -o pipefail
 
-pre-commit autoupdate
-pre-commit
+SCRIPTNAME=$(basename "$0")
+USERNAME=$(whoami)
+echo "+++ $SCRIPTNAME (USER/ID: $USERNAME/$UID) started +++"
+
+#pre-commit autoupdate
+#pre-commit
 
 if [ ! -r ~/.config/nvim ];then
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
+
+echo "+++ $SCRIPTNAME (USER/ID: $USERNAME/$UID) completed with RC:$? +++"
