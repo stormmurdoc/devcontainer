@@ -28,7 +28,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     # http://lenguyenthedat.com/docker-cache/
     && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends \
     python3 python3-apt pip vim cmake wget libtool autoconf automake cmake libncurses5-dev g++ git curl ca-certificates build-essential git-lfs \
-    && pip install --no-cache-dir pre-commit
+    && pip install --no-cache-dir --break-system-packages pre-commit
 
 USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
