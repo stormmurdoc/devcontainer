@@ -28,7 +28,17 @@ RUN groupadd --gid $USER_GID $USERNAME \
     # http://lenguyenthedat.com/docker-cache/
     && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends \
     python3 python3-apt pip vim cmake wget libtool autoconf automake cmake libncurses5-dev g++ git curl ca-certificates build-essential git-lfs \
-    && pip install --no-cache-dir --break-system-packages pre-commit
+    && pip install --no-cache-dir --break-system-packages pre-commit \
+    && curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage \
+    && chmod u+x nvim.appimage \
+    && ./nvim.appimage --appimage-extract \
+    && ln -s /squashfs-root/AppRun /usr/bin/nvim \
+    && NVIM_PATH=/usr/bin/nvim \
+    && update-alternatives --install /usr/bin/ex ex "${NVIM_PATH}" 110 \
+    && update-alternatives --install /usr/bin/vi vi "${NVIM_PATH}" 110 \
+    && update-alternatives --install /usr/bin/view view "${NVIM_PATH}" 110 \
+    && update-alternatives --install /usr/bin/vim vim "${NVIM_PATH}" 110 \
+    && update-alternatives --install /usr/bin/vimdiff vimdiff "${NVIM_PATH}" 110
 
 USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -56,3 +66,4 @@ RUN curl -fsSL https://starship.rs/install.sh | sh -s -- --yes \
     && echo 'eval "$(starship init zsh)"' >> "/home/$USERNAME/.zshrc" \
     && echo 'export TERM=xterm-256color' >> "/home/$USERNAME/.zshrc" \
     && echo 'alias ll="ls -l"' >> "/home/$USERNAME/.zshrc" \
+    && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1

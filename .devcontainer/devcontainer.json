@@ -1,6 +1,17 @@
 {
   "build": {
-    "dockerfile": "../Dockerfile"
+    "dockerfile": "./Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "streetsidesoftware.code-spell-checker",
+        "DavidAnson.vscode-markdownlint",
+        "shd101wyy.markdown-preview-enhanced",
+        "bierner.github-markdown-preview"
+      ]
+    }
   },
   "extensions": [
     "alefragnani.bookmarks",
@@ -15,7 +26,7 @@
     "source=projectname-zshhistory,target=/commandhistory,type=volume"
   ],
   "name": "base",
-  "postCreateCommand": "pre-commit autoupdate;pre-commit",
+  "postCreateCommand": "./post-exec.sh",
   "remoteUser": "murdoc",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh"
