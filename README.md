@@ -6,6 +6,15 @@ Use this repo to test a devcontainer with the help of devpod.
 For further information on devpod visit
 [devpod.sh](https://devpod.sh/docs/what-is-devpod)
 
+## Feature
+
+This development container has the following features:
+
+* pre-commit
+* vim
+* git incluse config
+* zsh
+
 ![Shell](.media/shell.png)
 
 ## Table of Content
