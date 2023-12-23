@@ -31,6 +31,7 @@ This development container has the following features:
 * [Provider Inactivity Timeout](#provider-inactivity-timeout)
 * [Provider Options](#provider-options)
 * [Mirror](#mirror)
+* [Related Links](#related-links)
 
 <!-- vim-markdown-toc -->
 
@@ -148,3 +149,8 @@ devpod provider options ssh
 ## Mirror
 
 This repo is only a mirror from a private gitea instance.
+
+## Related Links
+
+* [nvchad install](https://nvchad.com/docs/quickstart/install)
+* [nvim installation](https://github.com/neovim/neovim/blob/master/INSTALL.md)
