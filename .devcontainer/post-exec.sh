@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #
+# Post Execution Script
+#
+
 pre-commit autoupdate
 pre-commit
 

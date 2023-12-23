@@ -68,4 +68,6 @@ RUN curl -fsSL https://starship.rs/install.sh | sh -s -- --yes \
     && echo 'eval "$(starship init zsh)"' >> "/home/$USERNAME/.zshrc" \
     && echo 'export TERM=xterm-256color' >> "/home/$USERNAME/.zshrc" \
     && echo 'alias ll="ls -l"' >> "/home/$USERNAME/.zshrc" \
+    && echo 'bindkey -s "^o" "lf\n" >> "/home/$USERNAME/.zshrc" \
+    && echo 'bindkey -s "^n" "nvim\n" >> "/home/$USERNAME/.zshrc" \
     && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
