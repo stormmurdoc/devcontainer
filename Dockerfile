@@ -17,7 +17,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     #
     # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
     && apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends ssh sudo python3 python3-apt bash zsh \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends ssh sudo bash zsh \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     #
@@ -27,7 +27,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
     # the remaining `apt-get install commands`:
     # http://lenguyenthedat.com/docker-cache/
     && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends \
-    vim cmake wget libtool autoconf automake cmake libncurses5-dev g++ git curl ca-certificates build-essential git-lfs
+    python3 python3-apt pip vim cmake wget libtool autoconf automake cmake libncurses5-dev g++ git curl ca-certificates build-essential git-lfs \
+    && pip install --no-cache-dir pre-commit
 
 USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
