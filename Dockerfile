@@ -2,6 +2,9 @@ FROM debian:12
 
 # https://code.visualstudio.com/docs/remote/containers-advanced#_creating-a-nonroot-user
 ARG USERNAME=murdoc
+ENV NAME="Patrick"
+ENV EMAIL="murdoc@storm-clan.de"
+
 # https://docs.docker.com/engine/reference/builder/#env
 # ARG is not persisted in the image so need to set it as ENV so that
 # child images built from this can reference it.
@@ -30,10 +33,19 @@ USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN curl -fsSL https://starship.rs/install.sh | sh -s -- --yes \
     && git config --global core.editor "vim" \
-    && git config --global user.email "murdoc@storm-clan.de" \
-    && git config --global user.name "Patrick" \
-    && git config --global alias.unstage 'reset HEAD --'
-
+    && git config --global user.email "$EMAIL" \
+    && git config --global user.name "$NAME" \
+    && git config --global alias.br 'branch' \
+    && git config --global alias.ci 'commit' \
+    && git config --global alias.co 'checkout' \
+    && git config --global alias.cob 'checkout -d' \
+    && git config --global alias.del 'branch -D' \
+    && git config --global alias.s 'status' \
+    && git config --global alias.st 'status' \
+    && git config --global alias.up 'rebase' \
+    && git config --global alias.undo 'reset HEAD~1 --mixed'
+    && git config --global alias.unstage 'reset HEAD --' \
+    && set -o vi \
     #
     # https://code.visualstudio.com/docs/remote/containers-advanced#_persist-zsh-history-between-runs
     && SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history" \
