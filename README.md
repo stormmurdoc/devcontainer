@@ -17,8 +17,10 @@ This development container has the following features:
 
 ![Shell](.media/shell.png)
 
-[devcontainer.json](./devcontainer/devcontainer.json)
-[Dockerfile](./devcontainer/Dockerfile)
+### Config Files
+
+* [devcontainer.json](./devcontainer/devcontainer.json)
+* [Dockerfile](./devcontainer/Dockerfile)
 
 ## Table of Content
 
