@@ -15,7 +15,7 @@
     "source=projectname-zshhistory,target=/commandhistory,type=volume"
   ],
   "name": "base",
-  "postCreateCommand": "pre-commit autoupdate",
+  "postCreateCommand": "pre-commit autoupdate;pre-commit",
   "remoteUser": "murdoc",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh"
