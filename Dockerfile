@@ -24,7 +24,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     # the remaining `apt-get install commands`:
     # http://lenguyenthedat.com/docker-cache/
     && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends \
-    vim git curl ca-certificates build-essential git-lfs
+    vim cmake wget libtool autoconf automake cmake libncurses5-dev g++ git curl ca-certificates build-essential git-lfs
 
 USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -32,6 +32,8 @@ RUN curl -fsSL https://starship.rs/install.sh | sh -s -- --yes \
     && git config --global core.editor "vim" \
     && git config --global user.email "murdoc@storm-clan.de" \
     && git config --global user.name "Patrick" \
+    && git config --global alias.unstage 'reset HEAD --'
+
     #
     # https://code.visualstudio.com/docs/remote/containers-advanced#_persist-zsh-history-between-runs
     && SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history" \
