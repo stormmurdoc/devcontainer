@@ -19,8 +19,8 @@ This development container has the following features:
 
 ### Config Files
 
-* [devcontainer.json](./devcontainer/devcontainer.json)
-* [Dockerfile](./devcontainer/Dockerfile)
+* [devcontainer.json](./.devcontainer/devcontainer.json)
+* [Dockerfile](./.devcontainer/Dockerfile)
 
 ## Table of Content
 
