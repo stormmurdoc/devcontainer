@@ -2,4 +2,7 @@
 #
 pre-commit autoupdate
 pre-commit
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
+if [ ! -r ~/.config/nvim ];then
+    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+fi

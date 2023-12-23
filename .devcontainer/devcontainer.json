@@ -26,7 +26,7 @@
     "source=projectname-zshhistory,target=/commandhistory,type=volume"
   ],
   "name": "base",
-  "postCreateCommand": "./post-exec.sh",
+  "postCreateCommand": ".devcontainer/post-exec.sh",
   "remoteUser": "murdoc",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh"
