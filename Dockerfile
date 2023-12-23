@@ -2,8 +2,8 @@ FROM debian:12
 
 # https://code.visualstudio.com/docs/remote/containers-advanced#_creating-a-nonroot-user
 ARG USERNAME=murdoc
-ENV NAME="Patrick"
-ENV EMAIL="murdoc@storm-clan.de"
+ARG NAME="Patrick"
+ARG EMAIL="murdoc@storm-clan.de"
 
 # https://docs.docker.com/engine/reference/builder/#env
 # ARG is not persisted in the image so need to set it as ENV so that
@@ -39,20 +39,19 @@ RUN curl -fsSL https://starship.rs/install.sh | sh -s -- --yes \
     && git config --global alias.ci 'commit' \
     && git config --global alias.co 'checkout' \
     && git config --global alias.cob 'checkout -d' \
+    && git config --global alias.df 'diff' \
     && git config --global alias.del 'branch -D' \
     && git config --global alias.s 'status' \
     && git config --global alias.st 'status' \
     && git config --global alias.up 'rebase' \
-    && git config --global alias.undo 'reset HEAD~1 --mixed'
+    && git config --global alias.undo 'reset HEAD~1 --mixed' \
     && git config --global alias.unstage 'reset HEAD --' \
     && set -o vi \
-    #
-    # https://code.visualstudio.com/docs/remote/containers-advanced#_persist-zsh-history-between-runs
     && SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history" \
     && sudo mkdir /commandhistory \
     && sudo touch /commandhistory/.zsh_history \
     && sudo chown -R $USERNAME /commandhistory \
     && echo $SNIPPET >> "/home/$USERNAME/.zshrc" \
     && echo 'eval "$(starship init zsh)"' >> "/home/$USERNAME/.zshrc" \
-    && echo 'export TERM=ansi' >> "/home/$USERNAME/.zshrc" \
+    && echo 'export TERM=xterm-256color' >> "/home/$USERNAME/.zshrc" \
     && echo 'alias ll="ls -l"' >> "/home/$USERNAME/.zshrc" \

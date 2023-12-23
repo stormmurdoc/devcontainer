@@ -15,6 +15,7 @@
     "source=projectname-zshhistory,target=/commandhistory,type=volume"
   ],
   "name": "base",
+  "postCreateCommand": "uname -a",
   "remoteUser": "murdoc",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh"
