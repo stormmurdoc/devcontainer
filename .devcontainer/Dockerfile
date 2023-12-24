@@ -11,7 +11,10 @@ ARG EMAIL="murdoc@storm-clan.de"
 ENV USERNAME=${USERNAME}
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
-# hadolint disable=DL3008
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME --shell /bin/zsh \
     #
