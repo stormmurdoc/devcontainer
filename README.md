@@ -151,6 +151,18 @@ You can list the table of provider's options by using
 devpod provider options ssh
 ```
 
+## zsh Shortcuts
+
+Inside the terminal you can use the following
+shortcuts:
+
+| Key     | Command                 |
+|---------|-------------------------|
+| STRG-o  | starts lf file manager  |
+| STRG-n  | starts neovim           |
+| STRG-p  | run pre-commit run -av  |
+| STRG-l  | clear screen            |
+
 ## Mirror
 
 This repo is only a mirror from a private gitea instance.
