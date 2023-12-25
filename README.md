@@ -39,7 +39,7 @@ features:
 * Container uses persistent volume for the shell history
 * git inclusive default config
 * lf file manager incl. fzf support
-* neovim complete IDE (nvchad)
+* [neovim](https://github.com/neovim/neovim) complete IDE [nvchad](https://nvchad.com/)
 * pre-commit
 * ripgrep
 * sudo command available without password
