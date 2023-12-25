@@ -20,7 +20,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     #
     # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
     && apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends ssh sudo bash zsh \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends ssh sudo bash zsh zsh-syntax-highlighting zsh-autosuggestions \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     #
