@@ -35,6 +35,8 @@ This development container has the following features:
 * [Usage](#usage)
 * [Provider Inactivity Timeout](#provider-inactivity-timeout)
 * [Provider Options](#provider-options)
+* [zsh Shortcuts](#zsh-shortcuts)
+* [Neovim (nvchad) Shortcuts](#neovim-nvchad-shortcuts)
 * [Mirror](#mirror)
 * [Related Links](#related-links)
 
@@ -156,12 +158,21 @@ devpod provider options ssh
 Inside the terminal you can use the following
 shortcuts:
 
-| Key     | Command                 |
-|---------|-------------------------|
-| STRG-o  | starts lf file manager  |
-| STRG-n  | starts neovim           |
-| STRG-p  | run pre-commit run -av  |
-| STRG-l  | clear screen            |
+| Key       | Command                 |
+|-----------|-------------------------|
+| [CTRL-o]  | starts lf file manager  |
+| [CTRL-n]  | starts neovim           |
+| [CTRL-p]  | run pre-commit run -av  |
+| [CTRL-l]  | clear screen            |
+
+## Neovim (nvchad) Shortcuts
+
+Use the following shortcuts in neovim.
+
+| Key        | Command                 |
+|------------|-------------------------|
+| [space]th  | change the theme        |
+| [CTRL-n]   | to open nvimtree        |
 
 ## Mirror
 
