@@ -11,6 +11,8 @@ echo "+++ $SCRIPTNAME (USER/ID: $USERNAME/$UID) started +++"
 pre-commit autoupdate
 pre-commit
 
+sudo updatedb
+
 if [ ! -r ~/.config/nvim ];then
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
