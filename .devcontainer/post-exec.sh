@@ -8,8 +8,8 @@ SCRIPTNAME=$(basename "$0")
 USERNAME=$(whoami)
 echo "+++ $SCRIPTNAME (USER/ID: $USERNAME/$UID) started +++"
 
-#pre-commit autoupdate
-#pre-commit
+pre-commit autoupdate
+pre-commit
 
 if [ ! -r ~/.config/nvim ];then
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
