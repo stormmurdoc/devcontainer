@@ -46,7 +46,7 @@ features:
 * tmux inclusive plugins & themes
 * vim
 * zsh with syntax-highlighting & autosuggestions
-* Uses the local credentials (docker/ssh) from the client
+* Uses the local credentials (docker/git/ssh) from the client
 
 ![Shell](.media/shell.png)
 
