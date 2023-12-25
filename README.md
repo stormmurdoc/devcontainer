@@ -169,10 +169,12 @@ shortcuts:
 
 Use the following shortcuts in neovim.
 
-| Key        | Command                 |
-|------------|-------------------------|
-| [space]th  | change the theme        |
-| [CTRL-n]   | to open nvimtree        |
+| Key        | Command                      |
+|------------|------------------------------|
+| [space]th  | change the theme             |
+| [space]ff  | open telescope fuzzy finder  |
+| [space]fw  | open telescope live grep     |
+| [CTRL-n]   | to open nvimtree             |
 
 ## Mirror
 
@@ -181,4 +183,5 @@ This repo is only a mirror from a private gitea instance.
 ## Related Links
 
 * [nvchad install](https://nvchad.com/docs/quickstart/install)
+* [nvchad documentation @ rocky linux](https://docs.rockylinux.org/books/nvchad/)
 * [nvim installation](https://github.com/neovim/neovim/blob/master/INSTALL.md)
