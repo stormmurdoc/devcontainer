@@ -33,7 +33,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     python3 python3-apt pip vim cmake wget libtool autoconf automake cmake \
         libncurses5-dev g++ git curl ca-certificates build-essential git-lfs \
         lf ripgrep shellcheck npm unzip python3.11-venv bat \
-    && pip install --no-cache-dir --break-system-packages pre-commit \
+    && pip install --no-cache-dir --break-system-packages pre-commit ansible \
     && curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage \
     && chmod u+x nvim.appimage \
     && ./nvim.appimage --appimage-extract \
