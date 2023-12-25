@@ -3,24 +3,10 @@
 [![Build Status](https://ci.bueraner.de/api/badges/murdoc/devcontainer/status.svg)](https://ci.bueraner.de/murdoc/devcontainer)
 
 Use this repo to test a devcontainer with the help of devpod.
+This container contains a large number of development tools.
+
 For further information on devpod visit
 [devpod.sh](https://devpod.sh/docs/what-is-devpod)
-
-## Feature
-
-This development container has the following features:
-
-* pre-commit
-* vim
-* git incluse config
-* zsh
-
-![Shell](.media/shell.png)
-
-### Config Files
-
-* [devcontainer.json](./.devcontainer/devcontainer.json)
-* [Dockerfile](./.devcontainer/Dockerfile)
 
 ## Table of Content
 
@@ -41,6 +27,33 @@ This development container has the following features:
 * [Related Links](#related-links)
 
 <!-- vim-markdown-toc -->
+
+## Features
+
+This development container (Debian 12) has the following
+features:
+
+* Contains all tools for ansible development
+* [Starship Cross Shell Prompt](https://starship.rs/)
+* Uses a customizable user account instead of root
+* Container uses persistent volume for the shell history
+* git inclusive default config
+* lf file manager incl. fzf support
+* neovim complete IDE (nvchad)
+* pre-commit
+* ripgrep
+* sudo command available without password
+* tmux inclusive plugins & themes
+* vim
+* zsh with syntax-highlighting & autosuggestions
+
+![Shell](.media/shell.png)
+
+### Config Files
+
+* [devcontainer.json](./.devcontainer/devcontainer.json)
+* [Dockerfile](./.devcontainer/Dockerfile)
+* [post-exec.sh](./.devcontainer/post-exec.sh)
 
 ## Preperation / Installation
 
@@ -169,12 +182,14 @@ shortcuts:
 
 Use the following shortcuts in neovim.
 
-| Key        | Command                      |
-|------------|------------------------------|
-| [space]th  | change the theme             |
-| [space]ff  | open telescope fuzzy finder  |
-| [space]fw  | open telescope live grep     |
-| [CTRL-n]   | to open nvimtree             |
+| Key        | Command                       |
+|------------|-------------------------------|
+| [space]th  | change the theme              |
+| [space]ff  | open telescope fuzzy finder   |
+| [space]fw  | open telescope live grep      |
+| [space]gt  | show git diff/status          |
+| [space]gb  | show git blame (current line) |
+| [CTRL-n]   | to open nvimtree              |
 
 ## Mirror
 
