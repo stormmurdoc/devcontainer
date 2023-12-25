@@ -183,14 +183,15 @@ shortcuts:
 
 Use the following shortcuts in neovim.
 
-| Key        | Command                       |
-|------------|-------------------------------|
-| [space]th  | change the theme              |
-| [space]ff  | open telescope fuzzy finder   |
-| [space]fw  | open telescope live grep      |
-| [space]gt  | show git diff/status          |
-| [space]gb  | show git blame (current line) |
-| [CTRL-n]   | to open nvimtree              |
+| Key        | Command                                  |
+|------------|------------------------------------------|
+| [space]th  | change the theme                         |
+| [space]ff  | open telescope fuzzy finder              |
+| [space]fa  | open telescope fuzzy finder (all files)  |
+| [space]fw  | open telescope live grep                 |
+| [space]gt  | show git diff/status                     |
+| [space]gb  | show git blame (current line)            |
+| [CTRL-n]   | to open nvimtree                         |
 
 ## Mirror
 
