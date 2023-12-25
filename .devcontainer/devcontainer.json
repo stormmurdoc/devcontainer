@@ -1,5 +1,10 @@
 {
   "build": {
+    "args": {
+      "EMAIL": "murdoc@storm-clan.de",
+      "NAME": "Patrick",
+      "USERNAME": "murdoc"
+    },
     "dockerfile": "./Dockerfile"
   },
   "customizations": {
