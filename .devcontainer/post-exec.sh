@@ -13,6 +13,8 @@ pre-commit
 
 sudo updatedb
 
+ansible-galaxy install -r requirements.yaml --force
+
 if [ ! -r ~/.config/nvim ];then
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
