@@ -219,3 +219,4 @@ This repo is only a mirror from a private gitea instance.
 * [nvchad install](https://nvchad.com/docs/quickstart/install)
 * [nvchad documentation @ rocky linux](https://docs.rockylinux.org/books/nvchad/)
 * [nvim installation](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+* [ansile Installationl](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#pipx-install)
