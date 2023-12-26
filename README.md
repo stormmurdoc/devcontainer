@@ -59,6 +59,7 @@ features:
 * [devcontainer.json](./.devcontainer/devcontainer.json)
 * [Dockerfile](./.devcontainer/Dockerfile)
 * [post-exec.sh](./.devcontainer/post-exec.sh)
+* [.editorconfig](./.editorconfig)
 
 ## Preperation / Installation
 
