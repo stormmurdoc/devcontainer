@@ -183,6 +183,8 @@ shortcuts:
 
 Use the following shortcuts in neovim.
 
+![nvim](./.media/devcontainer.png)
+
 | Key        | Command                                  |
 |------------|------------------------------------------|
 | [space]th  | change the theme                         |
