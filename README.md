@@ -12,6 +12,8 @@ For further information on devpod visit
 
 <!-- vim-markdown-toc GFM -->
 
+* [Features](#features)
+    * [Config Files](#config-files)
 * [Preperation / Installation](#preperation--installation)
     * [macOS Silicon/ARM](#macos-siliconarm)
     * [macOS Intel/AMD](#macos-intelamd)
@@ -23,6 +25,8 @@ For further information on devpod visit
 * [Provider Options](#provider-options)
 * [zsh Shortcuts](#zsh-shortcuts)
 * [Neovim (nvchad) Shortcuts](#neovim-nvchad-shortcuts)
+* [FAQ](#faq)
+    * [Attaching the Ansible Language Server to yaml files in neovim (LSP)](#attaching-the-ansible-language-server-to-yaml-files-in-neovim-lsp)
 * [Mirror](#mirror)
 * [Related Links](#related-links)
 
@@ -194,6 +198,16 @@ Use the following shortcuts in neovim.
 | [space]gt  | show git diff/status                     |
 | [space]gb  | show git blame (current line)            |
 | [CTRL-n]   | to open nvimtree                         |
+
+## FAQ
+
+### Attaching the Ansible Language Server to yaml files in neovim (LSP)
+
+You can fix this by setting the correct file type for the current buffer:
+
+```vim
+:set ft=yaml.ansible
+```
 
 ## Mirror
 
