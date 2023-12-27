@@ -1,9 +1,11 @@
-# devcontainer
+# devcontainer (DevPod)
 
 [![Build Status](https://ci.bueraner.de/api/badges/murdoc/devcontainer/status.svg)](https://ci.bueraner.de/murdoc/devcontainer)
 
 Use this repo to test a devcontainer with the help of devpod.
 This container contains a large number of development tools.
+
+![devpod overview](./.media/devpod_overview.png)
 
 For further information on devpod visit
 [devpod.sh](https://devpod.sh/docs/what-is-devpod)
