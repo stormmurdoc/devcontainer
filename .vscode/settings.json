@@ -1,24 +1,24 @@
 {
-    "cSpell.words": [
-        "APPDATA",
-        "autofix",
-        "clion",
-        "devcontainer",
-        "devpod",
-        "envrc",
-        "goland",
-        "intellij",
-        "jupyternotebook",
-        "markdownlint",
-        "neovim",
-        "nvchad",
-        "nvimtree",
-        "openvscode",
-        "phpstorm",
-        "Preperation",
-        "Redcarpet",
-        "ripgrep",
-        "rubymine",
-        "webstorm"
-    ]
+  "cSpell.words": [
+    "APPDATA",
+    "autofix",
+    "clion",
+    "devcontainer",
+    "devpod",
+    "envrc",
+    "goland",
+    "intellij",
+    "jupyternotebook",
+    "markdownlint",
+    "neovim",
+    "nvchad",
+    "nvimtree",
+    "openvscode",
+    "phpstorm",
+    "Preperation",
+    "Redcarpet",
+    "ripgrep",
+    "rubymine",
+    "webstorm"
+  ]
 }
