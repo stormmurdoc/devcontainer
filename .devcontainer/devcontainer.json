@@ -34,6 +34,7 @@
   "postCreateCommand": ".devcontainer/post-exec.sh",
   "remoteUser": "murdoc",
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/zsh"
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "workbench.colorTheme": "Catppuccin.catppuccin-vsc"
   }
 }
