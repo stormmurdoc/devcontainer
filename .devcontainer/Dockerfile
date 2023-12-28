@@ -33,7 +33,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
         python3 python3-apt pip vim cmake wget libtool autoconf automake cmake \
         libncurses5-dev g++ git curl ca-certificates build-essential git-lfs \
         lf ripgrep shellcheck npm unzip python3.11-venv bat jq yq \
-        tmux tmux-plugin-manager fzf locate \
+        tmux tmux-plugin-manager fzf locate locales \
     && pip install --no-cache-dir --break-system-packages pre-commit ansible \
     && curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage \
     && chmod u+x nvim.appimage \
@@ -44,7 +44,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && update-alternatives --install /usr/bin/vi vi "${NVIM_PATH}" 110 \
     && update-alternatives --install /usr/bin/view view "${NVIM_PATH}" 110 \
     && update-alternatives --install /usr/bin/vim vim "${NVIM_PATH}" 110 \
-    && update-alternatives --install /usr/bin/vimdiff vimdiff "${NVIM_PATH}" 110
+    && update-alternatives --install /usr/bin/vimdiff vimdiff "${NVIM_PATH}" 110 \
+    && sed --in-place '/en_US.UTF-8/s/^# //' /etc/locale.gen
 
 USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
