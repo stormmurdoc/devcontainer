@@ -22,7 +22,11 @@
         "mohsen1.prettify-json",
         "gruntfuggly.todo-tree",
         "redhat.vscode-yaml"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/zsh",
+        "workbench.colorTheme": "Catppuccin.catppuccin-vsc"
+      }
     }
   },
   "mounts": [
@@ -30,9 +34,5 @@
   ],
   "name": "base",
   "postCreateCommand": ".devcontainer/post-exec.sh",
-  "remoteUser": "murdoc",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/zsh",
-    "workbench.colorTheme": "Catppuccin.catppuccin-vsc"
-  }
+  "remoteUser": "murdoc"
 }
