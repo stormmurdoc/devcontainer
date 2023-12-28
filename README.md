@@ -127,7 +127,7 @@ Currently the following IDEs are supported:
 * intellij
 * jupyternotebook
 * none
-* openvscode
+* [openvscode](openvscode.md)
 * phpstorm
 * pycharm
 * rider
@@ -146,6 +146,9 @@ The IDE option `openvscode` starts a VSCODE instance in your local
 browser.
 
 ![openvscode](.media/openvscode.png)
+
+
+![devpod vscode](./.media/devpod_vscode.png)
 
 Connect to your devcontainer with the following command:
 
