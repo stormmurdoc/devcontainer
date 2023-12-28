@@ -1,3 +1,4 @@
+# Developer Image
 FROM debian:12
 
 # https://code.visualstudio.com/docs/remote/containers-advanced#_creating-a-nonroot-user

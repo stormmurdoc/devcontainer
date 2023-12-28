@@ -8,8 +8,8 @@ SCRIPTNAME=$(basename "$0")
 USERNAME=$(whoami)
 echo "+++ $SCRIPTNAME (USER/ID: $USERNAME/$UID) started +++"
 
-pre-commit autoupdate
-pre-commit
+# pre-commit autoupdate
+# pre-commit
 
 sudo updatedb
 
