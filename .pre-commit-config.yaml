@@ -30,7 +30,7 @@ repos:
         exclude: binary|\.bin$|public|themes
 
   - repo: https://github.com/jameswoolfenden/pre-commit-shell
-    rev: v1.0.6
+    rev: 0.0.2
     hooks:
       - id: shell-lint
         exclude: template|\.template$
