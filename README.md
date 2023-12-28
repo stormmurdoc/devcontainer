@@ -1,7 +1,6 @@
 # [devcontainer](devcontainer.md) (DevPod)
 
 [![Build Status](https://ci.bueraner.de/api/badges/murdoc/devcontainer/status.svg)](https://ci.bueraner.de/murdoc/devcontainer)
-
 Use this repo to test a devcontainer with the help of devpod.
 This container contains a large number of development tools.
 
@@ -10,29 +9,27 @@ This container contains a large number of development tools.
 For further information on devpod visit
 [devpod.sh](https://devpod.sh/docs/what-is-devpod)
 
-## Table of Content
+<!-- toc -->
 
-<!-- vim-markdown-toc GFM -->
+- [Features](#features)
+  * [Config Files](#config-files)
+- [Preperation / Installation](#preperation--installation)
+  * [macOS Silicon/ARM](#macos-siliconarm)
+  * [macOS Intel/AMD](#macos-intelamd)
+  * [Windows](#windows)
+  * [Linux AMD](#linux-amd)
+  * [Linux ARM](#linux-arm)
+- [Usage](#usage)
+- [Provider Inactivity Timeout](#provider-inactivity-timeout)
+- [Provider Options](#provider-options)
+- [zsh Shortcuts](#zsh-shortcuts)
+- [Neovim (nvchad) Shortcuts](#neovim-nvchad-shortcuts)
+- [FAQ](#faq)
+  * [Attaching the Ansible Language Server to yaml files in neovim (LSP)](#attaching-the-ansible-language-server-to-yaml-files-in-neovim-lsp)
+- [Mirror](#mirror)
+- [Related Links](#related-links)
 
-* [Features](#features)
-    * [Config Files](#config-files)
-* [Preperation / Installation](#preperation--installation)
-    * [macOS Silicon/ARM](#macos-siliconarm)
-    * [macOS Intel/AMD](#macos-intelamd)
-    * [Windows](#windows)
-    * [Linux AMD](#linux-amd)
-    * [Linux ARM](#linux-arm)
-* [Usage](#usage)
-* [Provider Inactivity Timeout](#provider-inactivity-timeout)
-* [Provider Options](#provider-options)
-* [zsh Shortcuts](#zsh-shortcuts)
-* [Neovim (nvchad) Shortcuts](#neovim-nvchad-shortcuts)
-* [FAQ](#faq)
-    * [Attaching the Ansible Language Server to yaml files in neovim (LSP)](#attaching-the-ansible-language-server-to-yaml-files-in-neovim-lsp)
-* [Mirror](#mirror)
-* [Related Links](#related-links)
-
-<!-- vim-markdown-toc -->
+<!-- tocstop -->
 
 ## Features
 
