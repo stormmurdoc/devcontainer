@@ -14,19 +14,17 @@
         "streetsidesoftware.code-spell-checker",
         "DavidAnson.vscode-markdownlint",
         "shd101wyy.markdown-preview-enhanced",
-        "bierner.github-markdown-preview"
+        "bierner.github-markdown-preview",
+        "alefragnani.bookmarks",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "christian-kohler.path-intellisense",
+        "mohsen1.prettify-json",
+        "gruntfuggly.todo-tree",
+        "redhat.vscode-yaml"
       ]
     }
   },
-  "extensions": [
-    "alefragnani.bookmarks",
-    "eamodio.gitlens",
-    "mhutchie.git-graph",
-    "christian-kohler.path-intellisense",
-    "mohsen1.prettify-json",
-    "gruntfuggly.todo-tree",
-    "redhat.vscode-yaml"
-  ],
   "mounts": [
     "source=projectname-zshhistory,target=/commandhistory,type=volume"
   ],
