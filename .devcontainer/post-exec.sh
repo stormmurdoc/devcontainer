@@ -21,4 +21,8 @@ if [ ! -r ~/.config/nvim ];then
     git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
 
+if [ ! -r ~/.config/nvim/lua/custom ];then
+    git clone https://github.com/stormmurdoc/nvchad-custom-config ~/.config/nvim/lua/custom --depth 1
+fi
+
 echo "+++ $SCRIPTNAME (USER/ID: $USERNAME/$UID) completed with RC:$? +++"
