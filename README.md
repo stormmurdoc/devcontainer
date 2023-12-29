@@ -120,6 +120,12 @@ or
 devpod up https://github.com/stormmurdoc/devcontainer --ide none
 ```
 
+or with personal dotfiles and VSCode.
+
+devpod up ./ --dotfiles https://github.com/stormmurdoc/dotfiles --ide vscode
+
+
+
 Currently the following IDEs are supported:
 
 * clion
