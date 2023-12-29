@@ -6,8 +6,12 @@ ARG USERNAME=murdoc
 ARG NAME="Patrick"
 ARG EMAIL="murdoc@storm-clan.de"
 
-LABEL org.opencontainers.image.description "Debian 12 Development Container"
-LABEL org.opencontainers.image.licenses=MIT
+LABEL org.opencontainers.image.authors="murdoc@storm-clan.de" \
+      org.label-schema.name="DevPod Image" \
+      org.label-schema.vendor="murdoc" \
+      org.label-schema.schema-version="0.11" \
+      org.opencontainers.image.description="Debian 12 Development Container for DevPod" \
+      org.opencontainers.image.licenses=MIT
 
 # https://docs.docker.com/engine/reference/builder/#env
 # ARG is not persisted in the image so need to set it as ENV so that
