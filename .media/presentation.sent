@@ -1,0 +1,52 @@
+🖥️ Remote Development
+with DevPod
+
+Development Container
+• Created initially by Mircrosoft
+• Open Standard
+• Almost everthing you need to develop is in the container
+• Configuration is defined in the devcontainer.json
+
+Features
+• Open-Source
+  • Mozilla Public License 2.0
+  • Uses the DevContainer Standard
+• Client-only
+  • Ships a lightweight Desktop for macOS, Linux & Windows
+  • There's is also a CLI
+  • Nothing to install on the server
+  • You can change where you run dev container on the fly
+• Unopinionated
+  • You should be able to use DevPod with any infrastructure you have
+• Cross IDE support (vscode, openvscode, vim)
+  • git & docker credentials sync
+• Costs
+  • No vendor lock-in
+  • shuts down unused virtual machines automatically
+
+Provider
+DevPod  uses the concept of providers, similiar to Terraform.
+Providers define how DevPod creates and manage specific infrastructure
+to run the dev containers on.
+Two Types:
+• Machine providers
+• Non-machine providers
+
+Machine Providers
+• Provision a VM to run the dev containers on
+• Examples: AWS, GCP, Azure, Custom
+
+Non-machine Providers
+• docker
+• Kubernetes (uses a  kube context)
+• SSH (runs containers on the target host)
+
+Desktop App
+DevPod comes with an easy-to-use desktop
+application that abstracts all the complexity away.
+If you want to build your own integration,
+DevPod offers a feature-rich CLI as well.
+
+Demo Time
+
+# /* vim: set filetype=sent : */ ~
