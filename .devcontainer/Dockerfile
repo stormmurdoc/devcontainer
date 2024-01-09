@@ -58,7 +58,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && update-alternatives --install /usr/bin/view view "${NVIM_PATH}" 110 \
     && update-alternatives --install /usr/bin/vim vim "${NVIM_PATH}" 110 \
     && update-alternatives --install /usr/bin/vimdiff vimdiff "${NVIM_PATH}" 110 \
-    && sed --in-place '/en_US.UTF-8/s/^# //' /etc/locale.gen
+    && sed --in-place '/en_US.UTF-8/s/^# //' /etc/locale.gen \
+    && locale-gen
 
 USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
