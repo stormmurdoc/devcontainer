@@ -20,8 +20,13 @@ ENV USERNAME=${USERNAME}
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
+# Set image timezone
+ENV TZ=Europe/Berlin
+# Set image locale.
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+#ENV LANG C.UTF-8
+#ENV LC_ALL C.UTF-8
 
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME --shell /bin/zsh \
