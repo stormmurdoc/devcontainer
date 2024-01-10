@@ -229,3 +229,4 @@ This repo is only a mirror from a private gitea instance.
 * [nvchad documentation @ rocky linux](https://docs.rockylinux.org/books/nvchad/)
 * [nvim installation](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 * [Turn vim into a full featured IDE with only one command](https://www.youtube.com/watch?v=Mtgo-nP_r8Y&t=1s)
+* [Devlopment Containers Community](https://github.com/devcontainers)
