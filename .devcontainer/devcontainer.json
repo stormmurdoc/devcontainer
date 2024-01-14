@@ -22,7 +22,8 @@
         "mohsen1.prettify-json",
         "gruntfuggly.todo-tree",
         "redhat.vscode-yaml",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "excalidraw.excalidraw-vscode"
       ],
       "settings": {
         "terminal.integrated.shell.linux": "/bin/zsh",
