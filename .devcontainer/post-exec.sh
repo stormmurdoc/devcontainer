@@ -14,7 +14,7 @@ echo "+++ $SCRIPTNAME (USER/ID: $USERNAME/$UID) started +++"
 sudo updatedb
 
 if [ -r ../requirements.yml ];then
-    ansible-galaxy install -r requirements.yaml --force
+    ansible-galaxy install -r requirements.yml --force
 fi
 
 if [ ! -r ~/.config/nvim ];then
