@@ -23,9 +23,12 @@
         "gruntfuggly.todo-tree",
         "redhat.vscode-yaml",
         "ms-azuretools.vscode-docker",
+        "ansible/ansible-language-server",
         "excalidraw.excalidraw-vscode"
       ],
       "settings": {
+        "excalidraw.theme": "dark",
+        "redhat.telemetry.enabled": false,
         "terminal.integrated.shell.linux": "/bin/zsh",
         "workbench.colorTheme": "Catppuccin.catppuccin-vsc"
       }
