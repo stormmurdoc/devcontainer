@@ -26,7 +26,8 @@ ENV TZ=Europe/Berlin
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 #ENV LANG C.UTF-8
-#ENV LC_ALL C.UTF-8
+ENV LC_ALL=C.UTF-8
+
 
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME --shell /bin/zsh \
@@ -59,6 +60,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && update-alternatives --install /usr/bin/vim vim "${NVIM_PATH}" 110 \
     && update-alternatives --install /usr/bin/vimdiff vimdiff "${NVIM_PATH}" 110 \
     && sed --in-place '/en_US.UTF-8/s/^# //' /etc/locale.gen \
+    && sed --in-place '/de_DE.UTF-8/s/^# //' /etc/locale.gen \
     && locale-gen
 
 USER $USERNAME
