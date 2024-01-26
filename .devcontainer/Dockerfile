@@ -61,7 +61,13 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && update-alternatives --install /usr/bin/vimdiff vimdiff "${NVIM_PATH}" 110 \
     && sed --in-place '/en_US.UTF-8/s/^# //' /etc/locale.gen \
     && sed --in-place '/de_DE.UTF-8/s/^# //' /etc/locale.gen \
-    && locale-gen
+    && locale-gen \
+    && LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*') \
+    && curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz" \
+    && tar xf lazygit.tar.gz lazygit \
+    && install lazygit /usr/local/bin \
+    && rm lazygit.tar.gz \
+    && rm -rf ./lazygit
 
 USER $USERNAME
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -89,6 +95,7 @@ RUN curl -fsSL https://starship.rs/install.sh | sh -s -- --yes \
     && echo 'eval "$(starship init zsh)"' >> "/home/$USERNAME/.zshrc" \
     && echo 'export TERM=ansi' >> "/home/$USERNAME/.zshrc" \
     && echo 'alias ll="ls -l"' >> "/home/$USERNAME/.zshrc" \
+    && echo 'alias lg="lazygit"' >> "/home/$USERNAME/.zshrc" \
     && git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 \
     && git clone https://github.com/stormmurdoc/nvchad-custom-config ~/.config/nvim/lua/custom --depth 1 \
     && nvim --headless +PlugInstall +qall
