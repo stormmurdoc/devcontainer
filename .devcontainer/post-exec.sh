@@ -28,8 +28,11 @@ fail () {
 
 info "$SCRIPTNAME (USER/ID: $USERNAME/$UID) launched"
 
-# pre-commit autoupdate
-# pre-commit
+info "Running pre-commit autoupdate"
+pre-commit autoupdate
+
+info "Running pre-commit to build cache files"
+pre-commit
 
 info "Updating locate database"
 sudo updatedb || fail "Updating locate database"

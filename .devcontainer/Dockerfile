@@ -28,7 +28,7 @@ ENV LANGUAGE en_US:en
 #ENV LANG C.UTF-8
 ENV LC_ALL=C.UTF-8
 
-
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME --shell /bin/zsh \
     #
