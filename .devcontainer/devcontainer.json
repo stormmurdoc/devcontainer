@@ -24,7 +24,8 @@
         "redhat.vscode-yaml",
         "ms-azuretools.vscode-docker",
         "ansible.ansible-language-server",
-        "excalidraw.excalidraw-vscode"
+        "excalidraw.excalidraw-vscode",
+        "gera2ld.markmap-vscode"
       ],
       "settings": {
         "excalidraw.theme": "dark",
