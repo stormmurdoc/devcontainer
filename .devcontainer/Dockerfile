@@ -20,6 +20,9 @@ ENV USERNAME=${USERNAME}
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
+# > Force apt to not be interactive/not ask
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Set image timezone
 ENV TZ=Europe/Berlin
 # Set image locale.
