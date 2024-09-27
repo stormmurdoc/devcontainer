@@ -24,7 +24,7 @@ repos:
       - id: detect-private-key
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.42.0
+    rev: v0.41.0
     hooks:
       - id: markdownlint
         exclude: binary|\.bin$|public|themes
@@ -43,7 +43,7 @@ repos:
         exclude: binary|\.bin$|public
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.18.4
+    rev: v8.19.3
     hooks:
       - id: gitleaks
 
