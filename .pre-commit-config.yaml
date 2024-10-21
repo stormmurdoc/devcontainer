@@ -1,7 +1,7 @@
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       # Identify invalid files
       # git checks
@@ -43,7 +43,7 @@ repos:
         exclude: binary|\.bin$|public
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.21.1
+    rev: v8.18.4
     hooks:
       - id: gitleaks
 
