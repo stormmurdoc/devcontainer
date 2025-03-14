@@ -1,5 +1,5 @@
 # Developer Image
-FROM debian:12@sha256:35286826a88dc879b4f438b645ba574a55a14187b483d09213a024dc0c0a64ed
+FROM debian:12@sha256:17122fe3d66916e55c0cbd5bbf54bb3f87b3582f4d86a755a0fd3498d360f91b
 
 # https://code.visualstudio.com/docs/remote/containers-advanced#_creating-a-nonroot-user
 ARG USERNAME=murdoc
